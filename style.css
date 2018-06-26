@@ -1,0 +1,43 @@
+body{
+	width:800px;
+	margin:0 auto;
+	background-image: linear-gradient(to right, #F2F2F2, #DBDBDB, #EAEAEA);
+}
+
+
+h1, h2 ,h3{
+font-family: 'Source Sans Pro', sans-serif;
+}
+h1{
+	font-size: 3em;
+	color:#2D2C44;
+}
+h2{
+border-bottom: solid;
+border-width:1px;
+font-size: 2em	
+}
+
+h2:hover{
+text-indent:20px;
+}
+
+p, ul {
+font-family: 'Lora', serif;
+color:#999999;
+}
+
+a , .faux_link{
+font-size:1.2em;
+color:blue;
+text-decoration: none;
+}
+
+a:hover{
+	font-style:italic;
+	color:red;
+}
+
+.italic{
+	font-style:italic;
+}
