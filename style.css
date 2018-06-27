@@ -1,13 +1,14 @@
 body{
 	width:800px;
 	margin:0 auto;
-	background-image: linear-gradient(to right, #F2F2F2, #DBDBDB, #EAEAEA);
+	background:#eeeeee;
 }
 
 
 h1, h2 ,h3{
 font-family: 'Source Sans Pro', sans-serif;
 }
+
 h1{
 	font-size: 3em;
 	color:#2D2C44;
@@ -19,18 +20,12 @@ font-size: 2em
 }
 
 h2:hover{
-text-indent:20px;
+padding-left:20px;
 }
 
 p, ul {
 font-family: 'Lora', serif;
 color:#999999;
-}
-
-a , .faux_link{
-font-size:1.2em;
-color:blue;
-text-decoration: none;
 }
 
 a:hover{
@@ -40,4 +35,46 @@ a:hover{
 
 .italic{
 	font-style:italic;
+}
+
+#bouttons{
+	display:block;
+	width:auto;
+	height:50px;
+}
+
+	.boutton{
+		position:relative;
+		width:20%;
+		height:100%;
+		border-radius: 15px;
+		margin-right:2.5%;
+	}
+		#soft{
+			display:none;
+			background-image: linear-gradient(to right, #2193b0, #6dd5ed);
+		}
+
+		#psyche{
+			background-image: linear-gradient(to right, #ee0979, #ff6a00);
+		}
+
+			.name{
+				position:relative;
+				font-family: 'Source Sans Pro', sans-serif;
+				font-size: 1em;
+				text-align: center;
+				top:25%;
+				height:50%;
+				color:white;
+			}
+
+#popup{
+	position:fixed;
+	display: block;
+	width:600px;
+	height:400px;
+	text-align:center;
+	background-image: linear-gradient(#f4c4f3, #fc67fa);
+	z-index: 100;
 }
