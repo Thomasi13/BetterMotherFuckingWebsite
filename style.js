@@ -1,21 +1,32 @@
-$(document).mousemove(function (e) {
+$(document).ready(function() {
 
-  var $width = ($(document).width()) / 255;
-  var $height = ($(document).height()) / 255;
-  var $pageX = parseInt(e.pageX / $width, 10);
-  var $pageY = parseInt(e.pageY / $height, 10);
+  setTimeout(function(){ 
+    alert("Hey le site xxxvidsxxx est trop bien. Viens dessus stp please"); }, 10000);
 
-  // rgba($a-$b-$c);
-  var $a = $pageX,
-      $b = ($pageY - 255) * (-1),
-      $c = 0;
 
-  // if cursor is in bottom left, adjust $c accordingly
-  if ($pageX <= $pageY) {
-      $c = $pageY - $pageX;
-  }
+  $('#psyche').click(function() {
+        $("body").css( "background", '#f953c6' );
+        $("#soft").css( "display", 'block' );
+        $("#psyche").css( "display", 'none' );
+        $("p").css( "color", 'blue' );
+        $("p").css( "font-family", 'Source Sans Pro' );
+        $("h1,h2,h3").css( "color", 'green' );
+        $("h1,h2,h3").css( "font-family", 'Lora' );
+        $("a").css( "color", 'white' );
+    });
 
-  // change element to whatever you need to target
-  $(element).css('background-color', 'rgb('+$a+','+$b+','+$c+')');
+  $('#soft').click(function() {
+        $("body").css( "background", '' );
+        $("#soft").css( "display", '' );
+        $("#psyche").css( "display", '' );
+        $("p").css( "color", '' );
+        $("p").css( "font-family", '' );
+        $("h1,h2,h3").css( "color", '' );
+        $("h1,h2,h3").css( "font-family", '' );
+    });
+
+
+
+
 
 });
